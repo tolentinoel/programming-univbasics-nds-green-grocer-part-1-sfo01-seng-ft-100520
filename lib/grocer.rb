@@ -26,7 +26,16 @@ def consolidate_cart(cart)
   end
   while x < cart.length do
     purchase << cart[x]
-    x += 1
+    if cart[x][:item] 
+      cart[x][:count] += 1 
+    else
+      cart[x][:count] = 1
+    end
+    x+= 1
+  end
+  purchase
+  #binding.pry
+end
   
  
  purchase
