@@ -24,7 +24,8 @@ def consolidate_cart(cart)
   cart.each do |stuff|
     stuff[:count] = 0
   end
-  while x < cart.length
+  while x < cart.length do
+    purchase << 
   
  
  purchase
