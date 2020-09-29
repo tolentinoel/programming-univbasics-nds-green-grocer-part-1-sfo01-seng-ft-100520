@@ -25,7 +25,8 @@ def consolidate_cart(cart)
     stuff[:count] = 0
   end
   while x < cart.length do
-    purchase << 
+    purchase << cart[x]
+    x += 1
   
  
  purchase
