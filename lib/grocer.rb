@@ -19,6 +19,7 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
+  
  purchase = []
  x = 0
   cart.each do |stuff|
@@ -27,12 +28,12 @@ def consolidate_cart(cart)
   
   while x < cart.length do
     purchase << cart[x]
-    if cart[x][:item] 
-      cart[x][:count] += 1 
-    else
-      cart[x][:count] = 1
-    end
-    x+= 1
+      if cart[x][:item] 
+        cart[x][:count] += 1 
+      else
+        cart[x][:count] = 1
+      end
+      x+= 1
   #binding.pry
   end
   purchase
