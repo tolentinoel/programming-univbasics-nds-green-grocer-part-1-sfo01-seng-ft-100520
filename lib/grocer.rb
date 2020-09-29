@@ -22,7 +22,7 @@ def consolidate_cart(cart)
  purchase = []
  x = 0
   cart.each do |stuff|
-    
+    stuff[:count]
  
  
  purchase
